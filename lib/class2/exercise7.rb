@@ -30,13 +30,13 @@
 #
 #     'bird'.rjust(10)  #=> '      bird'
 
-line_width = 50
-puts ( 'Table of Contents'.center(line_width))
-ch = 'Chapter'
-pg = 'Page'
-puts('Chapter 1   Getting Started'.ljust( line_width))
-puts('Chapter 2   Numbers'.ljust( line_width))
-puts('Chapter 3   Letters'.ljust( line_width))
-puts('page   1'.rjust( line_width))
-puts('page   9'.rjust( line_width))
-puts('page  13'.rjust( line_width))
+ch1 = 'Chapter 1:  Getting Started'
+ch2 = 'Chapter 2:  Numbers'
+ch3 = 'Chapter 3:  Letters'
+pg1 = 'Page  1'
+pg9 = 'Page  9'
+pg13 = 'Page 13'
+puts 'Table of Contents'.center(50)
+puts ch1.ljust(0) + pg1.rjust(23)
+puts ch2.ljust(0) + pg9.rjust(31)
+puts ch3 + pg13.rjust(31)
