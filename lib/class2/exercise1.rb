@@ -4,4 +4,4 @@
 #
 # TIP: I expect you to use a mathematical equation.
 
-puts 365 * 24
+puts 24 * 365
