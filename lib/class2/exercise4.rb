@@ -15,9 +15,9 @@
 #   Nice to meet you, Samuel Leroy Jackson.
 
 puts 'What\'s your first name?'
-firstName = gets.chomp
+first_name = gets.chomp
 puts 'What\'s your middle name?'
-middleName = gets.chomp
+middle_name = gets.chomp
 puts 'What\'s your last name?'
-lastName = gets.chomp
-puts 'Nice to meet you, ' + firstName + middleName  + lastName
+last_name = gets.chomp
+puts 'Nice to meet you, ' + first_name + ' ' + middle_name + ' ' + last_name
