@@ -11,5 +11,6 @@
 #   WHADDAYA MEAN 'I WANT A RAISE'?!? YOU'RE FIRED!!
 
 puts 'CAN\'T YOU SEE I\'M BUSY?! MAKE IT FAST, JOHNSON!'
-var1 get.chomp
-puts 'WHADDAYA MEAN \'I WANT A RAISE\'?!? YOU\'RE FIRED!!'
+var1 = gets.chomp
+
+puts 'WHADDAYA MEAN \'' + var1.upcase + '\'?!? YOU\'RE FIRED!!'
