@@ -33,9 +33,9 @@
 ch1 = 'Chapter 1:  Getting Started'
 ch2 = 'Chapter 2:  Numbers'
 ch3 = 'Chapter 3:  Letters'
-pg1 = 'Page  1'
-pg9 = 'Page  9'
-pg13 = 'Page 13'
+pg1 = 'page  1'
+pg9 = 'page  9'
+pg13 = 'page 13'
 puts 'Table of Contents'.center(50)
 puts ch1.ljust(0) + pg1.rjust(23)
 puts ch2.ljust(0) + pg9.rjust(31)
