@@ -37,6 +37,6 @@ pg1 = 'page  1'
 pg9 = 'page  9'
 pg13 = 'page 13'
 puts 'Table of Contents'.center(50)
-puts ch1.ljust(0) + pg1.rjust(23)
-puts ch2.ljust(0) + pg9.rjust(31)
-puts ch3 + pg13.rjust(31)
+puts ch1.ljust(27) + pg1.rjust(23)
+puts ch2.ljust(19) + pg9.rjust(31)
+puts ch3.ljust(19) + pg13.rjust(31)
