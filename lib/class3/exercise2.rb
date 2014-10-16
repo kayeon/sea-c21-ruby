@@ -9,16 +9,14 @@
 #   BYE
 #   Nana: BYE SWEETIE!
 
-# Katie's code w/ stephanie!
-# puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
-# my_response = gets.chomp
-
-# if my_response == 'BYE'
-#   puts 'Nana: BYE SWEETIE!'
+#####
+#   puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
+# loop do
+#   my_response = gets.chomp
+#   puts 'Nana: BYE SWEETIE!' if my_response == 'BYE'
 # end
-# -- end katie's code
+####
 
-#
 # If you type something that's not in all uppercase, like 'bye', then Nana
 # replies like this:
 #
@@ -28,17 +26,15 @@
 #   Nana: HUH?! SPEAK UP, SWEETIE!"
 #   BYE
 #   Nana: BYE SWEETIE!
-#
 
-# --------- homework 2
-
+#####
 # loop do
 #   my_response = gets.chomp
 #   puts 'Nana: HUH?! SPEAK UP, SWEETIE!' if my_response != 'BYE'
 #   puts 'Nana: BYE SWEETIE!' if my_response == 'BYE'
 #   break if my_response == 'BYE'
 # end
-# ---------- homework 2 end
+#####
 
 # If you type something that's in all uppercase, not including 'BYE', she
 # responds like this:
@@ -53,6 +49,7 @@
 #   Nana: BYE SWEETIE!
 #
 
+#########
 # puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
 
 # loop do
@@ -70,6 +67,7 @@
 
 #   end
 # end
+#########
 
 # To make your program really believable, have Nana shout a random year
 # between 1930 and 1950 each time. For example:
@@ -113,4 +111,23 @@ loop do
     puts "Nana: NOT SINCE #{random_date}!"
 
   end
+end
+
+
+# ryan's solution
+
+puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
+
+loop do
+  response = gets.chomp
+  break if response == 'BYE'
+
+  if response == response.upcase
+    puts "Nana: NOT SINCE #{rand(21) + 1930}!"
+  else
+    puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
+  end
+end
+
+puts 'Nana: BYE SWEETIE!'
 end

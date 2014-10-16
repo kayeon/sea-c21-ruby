@@ -10,6 +10,12 @@
 #   i want a raise
 #   WHADDAYA MEAN 'I WANT A RAISE'?!? YOU'RE FIRED!!
 
+puts "CAN'T YOU SEE I'M BUSY?! MAKE IT FAST, JOHNSON!"
+requeset = gets.chomp
+
+puts "WHADDAYA MEAN '#{request.upcase}'?!? YOU'RE FIRED!!"
+
+
 puts 'CAN\'T YOU SEE I\'M BUSY?! MAKE IT FAST, JOHNSON!'
 var1 = gets.chomp
 

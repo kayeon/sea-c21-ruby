@@ -5,3 +5,5 @@
 # TIP: I expect you to use a mathematical equation.
 
 puts 24 * 365
+
+# puts 365 * 24
