@@ -28,31 +28,31 @@
 
 # rubocop:disable MethodLength
 def old_school_roman_numeral(num)
-  r_num =
-    [['M',  1000],
-     ['D',   500],
-     ['C',   100],
-     ['L',    50],
-     ['X',    10],
-     ['V',     5],
-     ['I',     1]]
 
-  final_number = ''
+r_num =
+  [['M', 1000],
+  ['D', 500],
+  ['C', 100],
+  ['L', 50],
+  ['X', 10],
+  ['V', 5],
+  ['I', 1]]
 
-  r_num.each do |roman_letter, value_of_roman_numberal|
-    # Result is the number of times we want the
-    # ... Roman Letter to appear in the Final _number String
-    count = num / value_of_roman_numberal
-    remainder = num % value_of_roman_numberal
-    # puts 'count =' + count.to_s
-    # puts 'remainder' + remainder.to_s
-    num = remainder
+final_number = ''
 
-    final_number += roman_letter * count
-    # puts final_number
-  end # End of the each block
-  final_number
-end   # End of def
+r_num.each do |roman, numbers|
+# Result is the number of times we want the Roman Letter to appear in the Final _number String
+result = num / numbers
+remainder = num % numbers
+puts 'result =' + result.to_s
+puts 'remainder' + remainder.to_s
+num = remainder
+
+final_number = final_number + (roman * result)
+puts final_number
+
+end
+end
 
 input = ARGV[0].to_i
 
