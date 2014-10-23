@@ -59,3 +59,46 @@ input = ARGV[0].to_i
 abort 'Usage: exercise4.rb [1-1000]' unless input.between?(1, 1000)
 
 puts old_school_roman_numeral(input)
+
+
+
+# def old_school_roman_numeral(num)
+#   arabic_to_roman = [
+#      ['M',  1000],
+#      ['D',   500],
+#      ['C',   100],
+#      ['L',    50],
+#      ['X',    10],
+#      ['V',     5],
+#      ['I',     1]
+#    ]
+
+# answer = []
+
+# arabics_to_romans.each do |arabic_to_roman|
+#   arabic, roman = arabic_to_roman
+
+#   quotient = num / arabic
+#   next if quotient == 0
+
+#   answer.push(roman * quotient)
+#   num %= arabic
+# end
+
+# answer.join
+# end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

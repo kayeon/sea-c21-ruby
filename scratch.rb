@@ -445,67 +445,206 @@
 # puts favorite_drink ('Jean-Luc')
 
 
-def ask question
-  while true
-    puts question
-    reply = gets.chomp.downcase
+# def ask question
+#   while true
+#     puts question
+#     reply = gets.chomp.downcase
 
-    if (reply == 'yes' || reply == 'no')
-      if reply == 'yes'
-        answer = true
-      else
-        answer = false
-      end
-      break
-    else
-      puts 'Please answer "yes" or "no".'
-    end
+#     if (reply == 'yes' || reply == 'no')
+#       if reply == 'yes'
+#         answer = true
+#       else
+#         answer = false
+#       end
+#       break
+#     else
+#       puts 'Please answer "yes" or "no".'
+#     end
+#   end
+#   answer # This is what we return (true or false)
+# end
+
+# puts 'Hello, and thank you for...'
+# puts
+
+# ask 'Do you like eating tacos?'
+# ask 'Do you like eating burritos?'
+# wets_bed = ask 'Do you wet the bed?'
+# ask 'Do you like eating chimichangas?'
+# ask 'Do you like eating sopapillas?'
+# puts 'Just a few more questions...'
+# raises_hand = ask 'Do you like drinking horchata?'
+# ask 'Do you like eating flautas?'
+
+# puts
+# puts 'DEBRIEFING'
+# puts 'Thank you for...'
+# puts
+# puts wets_bed
+# puts 'raises hand is true or false?'
+# puts raises_hand
+
+# # The filename doesn't have to end
+# # with ".txt", but since it is valid
+# # text, why not?
+# filename = 'ListerQuote.txt'
+# test_string = 'I promise that I swear absolutely that ' +
+#               'I will never mention gazpacho soup again.'
+# # The 'w' here is for write-access to the file,
+# # since we are trying to write to it.
+# File.open filename, 'w' do |f|
+#   f.write test_string
+# end
+
+# read_string = File.read filename
+
+# puts(read_string == test_string)
+
+
+# PG 85 Code Write Out
+
+# require 'yaml'  # Told you it was easy.
+# test_array = ['Give Quiche A Chance',
+#               'Mutants Out!',
+#               'Chameleonic Life-Forms, No Thanks']
+
+# # Here's half of the magic:
+# test_string = test_array.to_yaml
+# # You see? Kind of like "to_s", and it is in fact a string,
+# # but it's a YAML description of "test_array".
+
+# filename = 'RimmerTShirts.txt'
+
+# File.open filename, 'w' do |f|
+#   f.write test_string
+# end
+
+# read_string = File.read filename
+
+# # And the other half of the magic:
+# read_array = YAML::load read_string
+
+# puts(read_string == test_string)
+# puts(read_array  == test_array)
+
+# buffy_quote_1 = '\'Kiss rocks\'?
+#                  Why would anyone want to kiss...
+#                  Oh, wait. I get it.'
+
+# buffy_quote_2 = "'Kiss rocks'?\n" +
+#               "Why would anyone want to kiss...\n" +
+#               "Oh, wait. I get it."
+
+# p buffy_quote_1
+# p buffy_quote_2
+# puts
+# p(buffy_quote_1 == buffy_quote_2)
+
+# puts '3...\n2...\n1...\nHAPPY NEW YEAR!'
+
+# puts 'single (\') and double (") quotes'
+# puts "single (') and double (\") quotes"
+
+# name = 'Luke'
+# zip = 98210
+
+# puts "Name = #{name}, Zipcode = #{zip}"
+
+# puts "#{2 * 10**4 + 1} Leagues Under the Sea, THE REVENGE!"
+
+# PG 89 CODE EXAMPLE
+# require 'yaml'
+# # Fire we define these fancy methods...
+# def yaml_save object, filename
+#   File.open filename, 'w' do |f|
+#     f.write(object.to_yaml)
+#   end
+# end
+# def yaml_load filename
+#   yaml_string = File.read filename
+#   YAML::load yaml_string
+# end
+# # ...and now we use these fancy methods.
+# test_array = ['Slick Shoes',
+#               'Bully Blinders',
+#               'Pinchers of Peril']
+# # Hey, time for some "me" trivia:
+# # In Portland once, I met the guy who
+# # played Troy's dad. True story.
+# filename = 'DatasGadgets.txt'
+
+# # We save it...
+# yaml_save test_array, filename
+
+# # We load it...
+# read_array = yaml_load filename
+
+# puts read_array
+# puts test_array
+
+# p read_array
+# p test_array
+
+# # We wweep for the po' fools that ain't got it...
+# puts(read_array == test_array)
+
+# puts Dir['ParisHilton.jpg']
+
+# For Katy, with love.
+
+# (I always write little notes in the programs
+# I write for her. I deleted all of the dirty
+# one, tho, so that one is all that's left.)
+
+# This is where she stores her pictures before
+# she gets her YAML on and moves them to the server.
+# Just for my own convenience, I'll go there now.
+Dir.chdir '/Users/kayeon/states/pictureInbox'
+
+# First we find all of the pictures to be moved.
+pic_name = Dir['/Users/kayeon/images/fakeCardReader/**/*.{JPG,jpeg,jpg}']
+
+puts 'What would you like to call this batch?'
+batch_name = gets.chomp
+
+puts
+print "Downloading #{pic_name.length} files:  "
+
+# This will be our counter. We'll start at 1 today
+# though normally I like to count from 0
+pic_number = 1
+
+pic_name.each do |name|
+  print '.'  # This is our "progress bar"
+
+  new_name = if pic_number < 10
+    "#{batch_name}0#{pic_number}.jpg"
+  else
+    "#{bath_name}#{pic_number}.jpg"
   end
-  answer # This is what we return (true or false)
+# This renames the picture, but since "name"
+# has a big long path on it, and "new_name"
+# doesn't, it also moves the file to the
+# current working directory, which is now
+# Katy's PictureInbox folder.
+# Since it's a *move*, this effectively
+# downloads and deletes the originals.
+# And since this is a memory card, not a
+# hard drive, each of these takes a second
+# or so; hence, the little dots let her
+# know that my program didn't hose her machine.
+# (Some marriage advice from your favorite
+# author/programmer: it's all about the
+# little things.)
+
+# Now where were we? Oh, yeah...
+File.rename name, new_name
+# Finally, we increment the counter.
+pic_number = pic_number + 1
 end
 
-puts 'Hello, and thank you for...'
-puts
-
-ask 'Do you like eating tacos?'
-ask 'Do you like eating burritos?'
-wets_bed = ask 'Do you wet the bed?'
-ask 'Do you like eating chimichangas?'
-ask 'Do you like eating sopapillas?'
-puts 'Just a few more questions...'
-raises_hand = ask 'Do you like drinking horchata?'
-ask 'Do you like eating flautas?'
-
-puts
-puts 'DEBRIEFING'
-puts 'Thank you for...'
-puts
-puts wets_bed
-puts 'raises hand is true or false?'
-puts raises_hand
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+puts # This is so we aren't on progress bar line.
+puts 'Done, cutie!'
 
 
 

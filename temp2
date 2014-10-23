@@ -1,0 +1,71 @@
+[31m4a697fc [32m41 minute.. [34mKatie Kim [33m (HEAD, origin/master, origin/HEAD, master) [mMerge branch 'master' of https://github.com/codefellows/sea-c21-ruby
+[31m43f0c81 [32m47 minute.. [34mKatie Kim [33m [mcommit homework  4.4 + 4.5
+[31m9aa07b7 [32m3 hours ago [34mKatie Kim [33m [mcommit class 4/exercises 1 - 3
+[31mcda662d [32m21 hours .. [34mRyan Sobol[33m (upstream/master) [mFix alignment of class4 exercise2
+[31m8e02626 [32m21 hours .. [34mRyan Sobol[33m [mFix typo
+[31m55c72c4 [32m21 hours .. [34mRyan Sobol[33m [mFix typo
+[31m26bc9e8 [32m22 hours .. [34mRyan Sobol[33m [mRemove for style guide
+[31m1068f7c [32m22 hours .. [34mRyan Sobol[33m [mFix typo
+[31ma179964 [32m22 hours .. [34mRyan Sobol[33m [mAdd more array definition styles
+[31mb5f547f [32m22 hours .. [34mRyan Sobol[33m [mFix typo
+[31m9b3ae0d [32m22 hours .. [34mRyan Sobol[33m [mAdd array definition styles
+[31ma1c754b [32m24 hours .. [34mRyan Sobol[33m [mFix typo
+[31ma95989f [32m24 hours .. [34mRyan Sobol[33m [mImprove array and method guides
+[31m0f1f721 [32m24 hours .. [34mRyan Sobol[33m [mImprove readability
+[31m3905f2c [32m24 hours .. [34mRyan Sobol[33m [mFix bug
+[31mef5408f [32m24 hours .. [34mRyan Sobol[33m [mImprove branching and looping guides
+[31m5aa3cac [32m32 hours .. [34mRyan Sobol[33m [mAdd class5 exercise5
+[31m7f05d61  [32m2 days ago [34mKatie Kim [33m [mMerge branch 'master' of https://github.com/codefellows/sea-c21-ruby
+[31m01a1fea  [32m3 days ago [34mRyan Sobol[33m [mFix typo
+[31m28417b6  [32m3 days ago [34mRyan Sobol[33m [mFix typos
+[31m972e60f  [32m3 days ago [34mRyan Sobol[33m [mImprove class5 exercises
+[31ma7e8589  [32m3 days ago [34mRyan Sobol[33m [mRemove class5 gitignore file
+[31m5005dc3  [32m3 days ago [34mRyan Sobol[33m [mRemove class5 target images
+[31m4c93ea7  [32m4 days ago [34mKatie Kim [33m [mMerge branch 'master' of https://github.com/codefellows/sea-c21-ruby
+[31m44fc282  [32m4 days ago [34mRyan Sobol[33m [mRemove class5 songs
+[31m92e4f7a  [32m4 days ago [34mRyan Sobol[33m [mRemove class5 git_config
+[31m1902163  [32m5 days ago [34mKatie Kim [33m [mcommit stuff
+[31m6edbb3c  [32m5 days ago [34mKatie Kim [33m [mcommit stuff
+[31ma7e66da  [32m5 days ago [34mKatie Kim [33m [mexercise 3 exercises 1-4
+[31m35598e4  [32m5 days ago [34mRyan Sobol[33m [mTweak TIP
+[31m2eac0ca  [32m5 days ago [34mRyan Sobol[33m [mImprove class4 exercises
+[31mdd916ac  [32m5 days ago [34mRyan Sobol[33m [mTweak branching example
+[31m3fa9e57  [32m6 days ago [34mRyan Sobol[33m [mFix exercise name
+[31m7dc59ad  [32m6 days ago [34mRyan Sobol[33m [mRemove class4 git_config
+[31m4790f21  [32m6 days ago [34mRyan Sobol[33m [mRe-word instructions for class2 exercise 3
+[31m897b237  [32m7 days ago [34mKatie Kim [33m [mexercise 3.1
+[31m7462209  [32m7 days ago [34mKatie Kim [33m [msubmit ex 4 again
+[31m48f3624  [32m7 days ago [34mKatie Kim [33m [msubmit ex 7
+[31mc04f13b  [32m7 days ago [34mKatie Kim [33m [mMerge branch 'master' of https://github.com/codefellows/sea-c21-ruby
+[31m34a0b67  [32m7 days ago [34mKatie Kim [33m [msubmit ex 7
+[31m5a1923e  [32m7 days ago [34mKatie Kim [33m [mcomitting ex 5 & 6
+[31m7dccd6f  [32m7 days ago [34mKatie Kim [33m [mpracticing add commit cycle
+[31mcc68067  [32m7 days ago [34mKatie Kim [33m [mSubmit class1 assignment
+[31m9b9d3cb  [32m8 days ago [34mRyan Sobol[33m [mFix bugs in class3 exercise3 specs (thanks Amanda)
+[31m939f626  [32m9 days ago [34mRyan Sobol[33m [mAdd a scratch pad
+[31m427d40f  [32m9 days ago [34mRyan Sobol[33m [mImprove class3 exercises
+[31m3370f44  [32m9 days ago [34mRyan Sobol[33m [mImprove class1 laptop test instructions
+[31m0596d77  [32m9 days ago [34mKatie Kim [33m [mMerge branch 'master' of https://github.com/codefellows/sea-c21-ruby
+[31m3f39eed [32m10 days ago [34mRyan Sobol[33m [mAdd instructions on running Rubocop and RSpec
+[31me2fc614 [32m11 days ago [34mRyan Sobol[33m [mImprove class1 laptop test
+[31m8d00549 [32m11 days ago [34mRyan Sobol[33m [mAdd instructions for bundle install
+[31m5b73425 [32m12 days ago [34mKatie Kim [33m [mSolved homework #1
+[31m8dd1376 [32m12 days ago [34mKatie Kim [33m [mMerge branch 'master' of https://github.com/codefellows/sea-c21-ruby
+[31m83807d9 [32m12 days ago [34mRyan Sobol[33m [mIgnore .DS_Store
+[31m5153e87 [32m12 days ago [34mRyan Sobol[33m [mFix rubocop
+[31m04ff259 [32m12 days ago [34mKatie Kim [33m [mSubmit class1 assignment
+[31m69d695c [32m12 days ago [34mRyan Sobol[33m [mImprove specs for class 2 exercise 6
+[31mc14ca18 [32m12 days ago [34mRyan Sobol[33m [mImprove specs for class 2 exercise 5
+[31m412a828 [32m12 days ago [34mRyan Sobol[33m [mImprove specs for class 2 exercise 4
+[31mbe6fce0 [32m12 days ago [34mRyan Sobol[33m [mFix typo with class 2 exercise 1 spec
+[31m2571c47 [32m13 days ago [34mRyan Sobol[33m [mSwitch the guide to use single-quoted strings by default
+[31mc0a53e4 [32m13 days ago [34mRyan Sobol[33m [mFix typos with class 2 exercise 1 and 2
+[31m00fb867 [32m13 days ago [34mRyan Sobol[33m [mFix a type with class 2 exercise 1
+[31m27e5521 [32m13 days ago [34mRyan Sobol[33m [mFix another typo with class 2 exercise 4
+[31m8c776e6 [32m13 days ago [34mRyan Sobol[33m [mAdd specs for class 2 exercises
+[31m1d8c6c2 [32m13 days ago [34mRyan Sobol[33m [mFix a typo with class 2 exercise 4
+[31mc725327 [32m13 days ago [34mRyan Sobol[33m [mImprove class2 exercises
+[31m05b4cf9 [32m13 days ago [34mRyan Sobol[33m [mRemove setup that's in the class1 setup instructions
+[31m455b7a2 [32m13 days ago [34mRyan Sobol[33m [mFix the Terminal Profile instructions for Ubuntu
+[31mafe0cdc [32m2 weeks ago [34mRyan Sobol[33m [mFix homebrew install command
+[31mac6fc55 [32m2 weeks ago [34mRyan Sobol[33m [mInitial commit

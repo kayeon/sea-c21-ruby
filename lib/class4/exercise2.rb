@@ -26,7 +26,22 @@ hit_list =
  ['I Got 5 On It', 'Luniz', '1995'],
  ['Ready Or Not', 'The Fugees', '1996']]
 
-hit_list.each do |song, artist, year|
+# hit_list = [
+#  ['Can I Kick It?', 'A Tribe Called Quest', '1991'],
+#  ['Rump Shaker',    'Wreckx-n-Effect',      '1992'],
+#  ['Check Yo Self',  'Ice Cube',             '1993'],
+#  ['Regulate',       'Warren G & Nate Dogg', '1994'],
+#  ['I Got 5 On It',  'Luniz',                '1995'],
+#  ['Ready Or Not',   'The Fugees',           '1996']
+# ]
+
+hit_list.each do |song, artist, year| #Vertical bars || is "Block Parameter"
+# hits.each do |hit|
+# song, artist, year = hit #this is called destructioning assignment
+# OR can be writen this way too
+# song = hit[0]
+# artist = hit[1]
+# year = hit[2]
   puts song.ljust(20) + artist.ljust(26) + year.rjust(4)
 
 end

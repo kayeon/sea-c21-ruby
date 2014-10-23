@@ -43,7 +43,10 @@ word_input = []
 loop do
   word = gets.chomp
   break if word == ''
+  # break if word.emtpy?
+  # break if word == ''
   word_input.push word
+  # words.push(word)
 end
 
 puts 'Sweet! Here they are in alphabetical order:'
