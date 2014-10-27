@@ -70,7 +70,12 @@
 #       '/Users/tim/sea-c21-ruby/lib/class5/'
 
 def database
+
   File.dirname(File.absolute_path(__FILE__)) + '/database.yml'
+# File.absolute_path('../database.yml', __FILE__)
+# ../dtabase.yml -> ../ is chopping off previous dir. etc.. it's the same
+# as File.dirname.
+# so ../../ is File.dirname(File.dirname( etc ))
 end
 
 puts database

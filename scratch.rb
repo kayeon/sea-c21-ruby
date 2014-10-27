@@ -599,30 +599,30 @@
 # This is where she stores her pictures before
 # she gets her YAML on and moves them to the server.
 # Just for my own convenience, I'll go there now.
-Dir.chdir '/Users/kayeon/states/pictureInbox'
+# Dir.chdir '/Users/kayeon/states/pictureInbox'
 
-# First we find all of the pictures to be moved.
-pic_name = Dir['/Users/kayeon/images/fakeCardReader/**/*.{JPG,jpeg,jpg}']
+# # First we find all of the pictures to be moved.
+# pic_name = Dir['/Users/kayeon/images/fakeCardReader/**/*.{JPG,jpeg,jpg}']
 
-puts 'What would you like to call this batch?'
-batch_name = gets.chomp
+# puts 'What would you like to call this batch?'
+# batch_name = gets.chomp
 
-puts
-print "Downloading #{pic_name.length} files:  "
+# puts
+# print "Downloading #{pic_name.length} files:  "
 
-# This will be our counter. We'll start at 1 today
-# though normally I like to count from 0
-pic_number = 1
+# # This will be our counter. We'll start at 1 today
+# # though normally I like to count from 0
+# pic_number = 1
 
-pic_name.each do |name|
-  print '.'  # This is our "progress bar"
+# pic_name.each do |name|
+#   print '.'  # This is our "progress bar"
 
-  new_name = if pic_number < 10
-    "#{batch_name}0#{pic_number}.jpg"
-  else
-    "#{bath_name}#{pic_number}.jpg"
-  end
-# This renames the picture, but since "name"
+#   new_name = if pic_number < 10
+#     "#{batch_name}0#{pic_number}.jpg"
+#   else
+#     "#{bath_name}#{pic_number}.jpg"
+#   end
+# # This renames the picture, but since "name"
 # has a big long path on it, and "new_name"
 # doesn't, it also moves the file to the
 # current working directory, which is now
@@ -635,30 +635,81 @@ pic_name.each do |name|
 # know that my program didn't hose her machine.
 # (Some marriage advice from your favorite
 # author/programmer: it's all about the
-# little things.)
+# # little things.)
 
-# Now where were we? Oh, yeah...
-File.rename name, new_name
-# Finally, we increment the counter.
-pic_number = pic_number + 1
-end
+# # Now where were we? Oh, yeah...
+# File.rename name, new_name
+# # Finally, we increment the counter.
+# pic_number = pic_number + 1
+# end
 
-puts # This is so we aren't on progress bar line.
-puts 'Done, cutie!'
+# puts # This is so we aren't on progress bar line.
+# puts 'Done, cutie!'
+
+# ----
+# def greet(name)
+#   "Hello, #{name}"
+# end
+
+# def greet(name, another_name)
+#   "Hello, #{name} and #{another_name}"
+# end
+
+# def greet(name, another_name = 'Dave')
+#   "Hello, #{name} and #{another_name}"
+# end
+
+# # def greet(name, another_name)
+# #   "Wow, #{name}"
+# # end
+
+# puts greet('patrick')
+# puts greet('amanda')
 
 
+#### RYAN's Hash Lesson
+
+## Section: Iterating over a container
+
+## For Array
+# person = ['john', 40]
+
+# person.each_with_index do |element, index|
+#   puts "#{element} at #{index}"
+# end
+
+# ## For Hash
+
+# person = { 'name' => 'john', 'age' => 40}
+
+# person.each do |key, value|
+#   puts "#{key}: #{value}"
+# end
 
 
+## How Hash contrasts from an Array
 
 
+## Index Order vs. Value Order
+
+## Array Version (index)
+# person = ['john', 40]
+
+# person.each_with_index do |element, index|
+#   puts "#{element} at #{index}"
+# end
 
 
+## Insertion Order (key-value pair)
+
+# person = { 'name' => 'john', 'age' => 40 }
+
+# person.each do |key, value|
+#   puts "#{key}: #{value}"
+# end
 
 
-
-
-
-
+## Adding an Element vs. Adding a Key-Value Pair
 
 
 

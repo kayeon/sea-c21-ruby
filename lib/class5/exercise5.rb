@@ -37,6 +37,7 @@ end
 
 def find(id)
   my_array = load
+  index = id - 1 # - 1 is due to spec of
   my_array[id - 1]
 end
 
@@ -52,3 +53,10 @@ if record
 else
   puts "Could't find record ##{input} from #{database}"
 end
+
+
+
+
+
+
+
