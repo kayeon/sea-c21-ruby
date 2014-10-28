@@ -27,78 +27,70 @@
 # TIP #3: You only need to change the `old_school_roman_numeral` method.
 
 # rubocop:disable MethodLength
+
+# katie code begin
+# def old_school_roman_numeral(num)
+#   r_num =
+#     [['M',  1000],
+#      ['D',   500],
+#      ['C',   100],
+#      ['L',    50],
+#      ['X',    10],
+#      ['V',     5],
+#      ['I',     1]]
+
+#   final_number = ''
+
+#   r_num.each do |roman_letter, value_of_roman_numberal|
+#     # Result is the number of times we want the
+#     # ... Roman Letter to appear in the Final _number String
+#     count = num / value_of_roman_numberal
+#     remainder = num % value_of_roman_numberal
+#     # puts 'count =' + count.to_s
+#     # puts 'remainder' + remainder.to_s
+#     num = remainder
+
+#     final_number += roman_letter * count
+#     # puts final_number
+#   end # End of the each block
+#   final_number
+# end   # End of def
+
+# input = ARGV[0].to_i
+
+# abort 'Usage: exercise4.rb [1-1000]' unless input.between?(1, 1000)
+
+# puts old_school_roman_numeral(input)
+# katie end
+
 def old_school_roman_numeral(num)
-  r_num =
-    [['M',  1000],
-     ['D',   500],
-     ['C',   100],
-     ['L',    50],
-     ['X',    10],
-     ['V',     5],
-     ['I',     1]]
+  arabics_to_romans = [
+    [1000, 'M'],
+    [500,  'D'],
+    [100,  'C'],
+    [50,   'L'],
+    [10,   'X'],
+    [5,    'V'],
+    [1,    'I']
+  ]
 
-  final_number = ''
+  answer = []
 
-  r_num.each do |roman_letter, value_of_roman_numberal|
-    # Result is the number of times we want the
-    # ... Roman Letter to appear in the Final _number String
-    count = num / value_of_roman_numberal
-    remainder = num % value_of_roman_numberal
-    # puts 'count =' + count.to_s
-    # puts 'remainder' + remainder.to_s
-    num = remainder
+  arabics_to_romans.each do |arabic_to_roman|
+    arabic, roman = arabic_to_roman
 
-    final_number += roman_letter * count
-    # puts final_number
-  end # End of the each block
-  final_number
-end   # End of def
+    quotient = num / arabic
+    next if quotient == 0
+
+    answer.push(roman * quotient)
+    num %= arabic
+  end
+
+  answer.join
+end
 
 input = ARGV[0].to_i
 
 abort 'Usage: exercise4.rb [1-1000]' unless input.between?(1, 1000)
 
 puts old_school_roman_numeral(input)
-
-
-
-# def old_school_roman_numeral(num)
-#   arabic_to_roman = [
-#      ['M',  1000],
-#      ['D',   500],
-#      ['C',   100],
-#      ['L',    50],
-#      ['X',    10],
-#      ['V',     5],
-#      ['I',     1]
-#    ]
-
-# answer = []
-
-# arabics_to_romans.each do |arabic_to_roman|
-#   arabic, roman = arabic_to_roman
-
-#   quotient = num / arabic
-#   next if quotient == 0
-
-#   answer.push(roman * quotient)
-#   num %= arabic
-# end
-
-# answer.join
-# end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
