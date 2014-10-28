@@ -16,5 +16,16 @@
 #     orange_tree.fruit  #=> 50
 
 class OrangeTree
-  # fix me
+  def initialize
+    @fruit = 50
+
+    puts 'initialize method sets out 50 fruit'
+  end
+
+  def fruit
+    @fruit = false
+  end
 end
+
+orange_tree = OrangeTree.new
+puts "quantity of fruits on the tree #{orange_tree.fruit}"

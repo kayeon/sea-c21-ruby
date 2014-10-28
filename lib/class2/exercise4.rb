@@ -14,24 +14,13 @@
 #   Jackson
 #   Nice to meet you, Samuel Leroy Jackson.
 
-#begin
-# puts "What's your first name?"
-# first = gets.chomp
-
-# puts "What's your middle name?"
-# middle = gets.chomp
-
-# puts "What's your last name?"
-# last = gets.chomp
-
-# puts "Nice to meet you, #{first} #{middle} #{last}."
-#end
-
-
-puts 'What\'s your first name?'
+puts "What's your first name?"
 first = gets.chomp
-puts 'What\'s your middle name?'
+
+puts "What's your middle name?"
 middle = gets.chomp
-puts 'What\'s your last name?'
+
+puts "What's your last name?"
 last = gets.chomp
-puts 'Nice to meet you, ' + first + ' ' + middle + ' ' + last + '.'
+
+puts "Nice to meet you, #{first} #{middle} #{last}."

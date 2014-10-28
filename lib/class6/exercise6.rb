@@ -33,12 +33,21 @@ def update(key, value)
   my_hash = load
   # my_hash[key.to_sym] = value
   my_hash = my_hash.merge(key => value)
+  # my_hash = my_hash.merge(key.to_sym => value)
+  # my_hash = my_hash.merge({key.to_sym => value}, )
+  # person[key.to_sym] = value
   File.write(database, my_hash.to_yaml)
+
 end
 
 input1, input2 = ARGV
+# input1 = ARGV[0]
+# input2 = ARGV[1]
 
 abort 'Usage: exercise5.rb KEY VALUE' unless input1 && input2
+
+# unless input1 && input2
+# if input1.nil? || input2.nil?
 
 update(input1, input2)
 

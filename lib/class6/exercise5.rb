@@ -32,6 +32,7 @@ end
 def find(key)
   my_hash = load
   my_hash[key.to_sym]
+  # load[key.to_sym]
 end
 
 input = ARGV[0]

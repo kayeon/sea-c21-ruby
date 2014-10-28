@@ -32,7 +32,6 @@ end
 
 def remove(key)
   my_hash = load
-  # my_hash[key.to_sym] = value
   value = my_hash.delete(key.to_sym)
   File.write(database, my_hash.to_yaml)
   value

@@ -11,12 +11,6 @@
 #   WHADDAYA MEAN 'I WANT A RAISE'?!? YOU'RE FIRED!!
 
 puts "CAN'T YOU SEE I'M BUSY?! MAKE IT FAST, JOHNSON!"
-requeset = gets.chomp
+request = gets.chomp
 
 puts "WHADDAYA MEAN '#{request.upcase}'?!? YOU'RE FIRED!!"
-
-
-puts 'CAN\'T YOU SEE I\'M BUSY?! MAKE IT FAST, JOHNSON!'
-var1 = gets.chomp
-
-puts 'WHADDAYA MEAN \'' + var1.upcase + '\'?!? YOU\'RE FIRED!!'
