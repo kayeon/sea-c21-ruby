@@ -97,28 +97,6 @@
 puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
 
 loop do
-  my_response = gets.chomp
-
-  if my_response == 'BYE'
-    puts 'Nana: BYE SWEETIE!'
-    break
-
-  elsif my_response != my_response.upcase
-    puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
-
-  else
-    random_date = 1930 + (rand(21))
-    puts "Nana: NOT SINCE #{random_date}!"
-
-  end
-end
-
-
-# ryan's solution
-
-puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
-
-loop do
   response = gets.chomp
   break if response == 'BYE'
 
@@ -130,4 +108,3 @@ loop do
 end
 
 puts 'Nana: BYE SWEETIE!'
-end

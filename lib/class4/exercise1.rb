@@ -38,16 +38,13 @@
 
 puts 'Type some words to be sorted alphabetically:'
 
-word_input = []
+words = []
 
 loop do
   word = gets.chomp
-  break if word == ''
-  # break if word.emtpy?
-  # break if word == ''
-  word_input.push word
-  # words.push(word)
+  break if word.empty?
+  words.push(word)
 end
 
 puts 'Sweet! Here they are in alphabetical order:'
-puts word_input.sort
+puts words.sort

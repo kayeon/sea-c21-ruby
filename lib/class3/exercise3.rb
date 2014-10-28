@@ -33,36 +33,6 @@
 #   BYE
 #   Nana: BYE SWEETIE!
 
-puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
-count = 0
-
-loop do
-  my_response = gets.chomp
-
-  if my_response == 'BYE'
-    count += 1
-
-    if count == 3
-      puts 'Nana: BYE SWEETIE!'
-      break
-    else
-      puts "Nana: HOW\'S SCHOOL GOING?"
-    end
-
-  elsif my_response != my_response.upcase
-    puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
-    count = 0
-  else
-    # Shouting at Grandma but not saying BYE
-    random_date = 1930 + (rand(21))
-    puts "Nana: NOT SINCE #{random_date}!"
-    count = 0
-  end
-end
-
-
-#RYAN'S solution
-
 bye = 0
 puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
 
@@ -86,4 +56,3 @@ loop do
 end
 
 puts 'Nana: BYE SWEETIE!'
-
