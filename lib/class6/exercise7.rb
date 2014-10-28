@@ -23,15 +23,19 @@
 require 'yaml'
 
 def database
-  '/replace/me'
+  File.absolute_path('../database.yml', __FILE__)
 end
 
 def load
-  { replace: 'me' }
+  YAML.load_file(database)
 end
 
 def remove(key)
-  key # fix me
+  my_hash = load
+  # my_hash[key.to_sym] = value
+  value = my_hash.delete(key.to_sym)
+  File.write(database, my_hash.to_yaml)
+  value
 end
 
 input = ARGV[0]
