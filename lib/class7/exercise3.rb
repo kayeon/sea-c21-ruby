@@ -23,5 +23,36 @@
 #     orange_tree.fruit      #=> 44
 
 class OrangeTree
-  # replace me
+  def initialize
+    @fruit = 50
+
+    puts 'initialize method sets out 50 fruit'
+  end
+
+  def pick!(amount = 1)
+    if amount > @fruit
+      nil
+    else
+      puts 'amount = ' + amount.to_s # this is for debugging puts
+      @fruit -= amount
+    end
+  end
+
+  def fruit
+    @fruit
+  end
 end
+
+orange_tree = OrangeTree.new
+puts "quantity of fruits on the tree #{orange_tree.fruit}"
+
+orange_tree.pick!
+puts "quantity of fruits on the tree #{orange_tree.fruit}"
+
+orange_tree.pick!(3)
+puts "quantity of fruits on the tree #{orange_tree.fruit}"
+
+ret_val = orange_tree.pick!(47)
+puts "quantity of fruits on the tree #{orange_tree.fruit}"
+
+puts ret_val

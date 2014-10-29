@@ -28,8 +28,8 @@ end
 def load
   read_string = File.read database
   YAML.load read_string
-# def load
-#   YAML.load_file(database)
+  # def load
+  #   YAML.load_file(database)
 end
 
 records = load

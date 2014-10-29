@@ -26,5 +26,54 @@
 #     OrangeTree.new(20) != OrangeTree.new(10)
 
 class OrangeTree
-  # replace me
+  def initialize(fruit = 50)
+    @fruit = fruit
+  end
+
+  def pick!(amount = 1)
+    if amount > @fruit
+      nil
+    else
+      puts 'amount = ' + amount.to_s # this is for debugging puts
+      @fruit -= amount
+    end
+  end
+
+  def ==(other)
+    if @fruit == other.fruit
+      true
+    else
+      false
+    end
+  end
+
+  def fruit
+    @fruit
+  end
 end
+
+orange_tree = OrangeTree.new(75)
+puts "quantity of fruits on the tree #{orange_tree.fruit}"
+
+orange_tree_1 = OrangeTree.new
+puts "quantity of fruits on the tree #{orange_tree_1.fruit}"
+
+if orange_tree == orange_tree_1
+  # if orange_tree.==(orange_tree_1) <-- same thing as above
+  puts "they're equal"
+else
+  puts "they're not equal"
+end
+
+# puts "#{OrangeTree.new(20) == OrangeTree.new(20)}"
+# puts "#{OrangeTree.new(20) != OrangeTree.new(10)}"
+
+# orange_tree.==(another_orange_tree)
+
+# x = 3
+# y = 4
+# if x == y
+# puts "they're equal"
+# else
+#   puts "they're not equal"
+# end
