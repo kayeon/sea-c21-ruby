@@ -62,6 +62,7 @@ end
 'foo'.indent(3)
 
 class Integer
+  # rubocop:disable MethodLength
   def to_roman
     arabics_to_romans = [
       [1000, 'M'],
