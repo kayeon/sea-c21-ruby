@@ -37,7 +37,6 @@ def update(key, value)
   # my_hash = my_hash.merge({key.to_sym => value}, )
   # person[key.to_sym] = value
   File.write(database, my_hash.to_yaml)
-
 end
 
 input1, input2 = ARGV

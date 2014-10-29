@@ -63,37 +63,37 @@ end
 
 class Integer
   def to_roman
-      arabics_to_romans = [
-    [1000, 'M'],
-    [900, 'CM'],
-    [500, 'D'],
-    [400, 'CD'],
-    [100, 'C'],
-    [90, 'XC'],
-    [50, 'L'],
-    [40, 'XL'],
-    [10, 'X'],
-    [9, 'IX'],
-    [5, 'V'],
-    [4, 'IV'],
-    [1, 'I']
-  ]
+    arabics_to_romans = [
+      [1000, 'M'],
+      [900, 'CM'],
+      [500,  'D'],
+      [400, 'CD'],
+      [100,  'C'],
+      [90,  'XC'],
+      [50,   'L'],
+      [40,  'XL'],
+      [10,   'X'],
+      [9,   'IX'],
+      [5,    'V'],
+      [4,   'IV'],
+      [1,    'I']
+    ]
 
-  num = self
-  answer = []
+    num = self
+    answer = []
 
-  arabics_to_romans.each do |arabic_to_roman|
-    arabic, roman = arabic_to_roman
+    arabics_to_romans.each do |arabic_to_roman|
+      arabic, roman = arabic_to_roman
 
-    quotient = num / arabic
-    next if quotient == 0
+      quotient = num / arabic
+      next if quotient == 0
 
-    answer.push(roman * quotient)
-    num %= arabic
+      answer.push(roman * quotient)
+      num %= arabic
+    end
   end
 
   answer.join
-  end
 end
 
 class Array
