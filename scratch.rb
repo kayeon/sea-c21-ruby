@@ -799,136 +799,309 @@
 # end
 # puts Die.new.showing
 
-class Dragon
+# class Dragon
 
-  def initialize name
-    @name = name
-    @asleep = false
-    @stuff_in_belly     = 10 # He's full.
-    @stuff_in_intestine = 0 # He doesn't need to go.
+#   def initialize name
+#     @name = name
+#     @asleep = false
+#     @stuff_in_belly     = 10 # He's full.
+#     @stuff_in_intestine = 0 # He doesn't need to go.
 
-    puts "#{@name} is born."
-  end
+#     puts "#{@name} is born."
+#   end
 
-  def feed
-    puts "You feed #{@name}."
-    @stuff_in_belly = 10
-    passage_of_time
-  end
+#   def feed
+#     puts "You feed #{@name}."
+#     @stuff_in_belly = 10
+#     passage_of_time
+#   end
 
-  def walk
-    puts "You walk #{@name}."
-    @stuff_in_intestine = 0
-    passage_of_time
-  end
+#   def walk
+#     puts "You walk #{@name}."
+#     @stuff_in_intestine = 0
+#     passage_of_time
+#   end
 
-  def put_to_bed
-    puts "You put #{@name} to bed."
-    @asleep = true
-    3.times do
-      if @asleep
-        passage_of_time
-      end
-      if @asleep
-        puts "#{@name} snores, filling the room with smoke."
-      end
-    end
-    if @asleep
-      @asleep = false
-      puts "#{@name} wakes up slowly."
-    end
-  end
+#   def put_to_bed
+#     puts "You put #{@name} to bed."
+#     @asleep = true
+#     3.times do
+#       if @asleep
+#         passage_of_time
+#       end
+#       if @asleep
+#         puts "#{@name} snores, filling the room with smoke."
+#       end
+#     end
+#     if @asleep
+#       @asleep = false
+#       puts "#{@name} wakes up slowly."
+#     end
+#   end
 
-  def toss
-    puts "You toss #{@name} up into the air."
-    puts 'He giggles, which singes your eyebrows.'
-    passage_of_time
-  end
-  def rock
-    puts "You rock #{@name} gently."
-    @asleep = true
-    puts 'He briefly dozes off...'
-    passage_of_time
-    if @asleep
-      @asleep = false
-      puts '...but wakes when you stop.'
-    end
-  end
+#   def toss
+#     puts "You toss #{@name} up into the air."
+#     puts 'He giggles, which singes your eyebrows.'
+#     passage_of_time
+#   end
+#   def rock
+#     puts "You rock #{@name} gently."
+#     @asleep = true
+#     puts 'He briefly dozes off...'
+#     passage_of_time
+#     if @asleep
+#       @asleep = false
+#       puts '...but wakes when you stop.'
+#     end
+#   end
 
-  private
-  # "private" means that the methods defined here are
-  # methods internal to the object. (You can feed your
-  # dragon, but you can't ask him whether he's hungry.)
-  def hungry?
-    # Method names can end with "?"
-    # Usually, we do this only if the method
-    # returns true or false, like this:
-    @stuff_in_belly <= 2
-  end
+#   private
+#   # "private" means that the methods defined here are
+#   # methods internal to the object. (You can feed your
+#   # dragon, but you can't ask him whether he's hungry.)
+#   def hungry?
+#     # Method names can end with "?"
+#     # Usually, we do this only if the method
+#     # returns true or false, like this:
+#     @stuff_in_belly <= 2
+#   end
 
-  def poopy?
-    @stuff_in_intestine >= 8
-  end
+#   def poopy?
+#     @stuff_in_intestine >= 8
+#   end
 
-  def passage_of_time
-    if @stuff_in_belly > 0
-      # Move food from belly to intestine.
-      @stuff_in_belly     = @stuff_in_belly     - 1
-      @stuff_in_intestine = @stuff_in_intestine + 1
-    else # Our dragon is starving!
-      if @asleep
-        @asleep = false
-        puts 'He wakes up suddenly!'
-      end
-      puts "#{@name} is starving In desperation, he ate YOU!"
-      exit # This quits the program.
-    end
-    if @stuff_in_intestine >= 10
-      @stuff_in_intestine = 0
-      puts "Whoops! #{@name} had an accident..."
-    end
+#   def passage_of_time
+#     if @stuff_in_belly > 0
+#       # Move food from belly to intestine.
+#       @stuff_in_belly     = @stuff_in_belly     - 1
+#       @stuff_in_intestine = @stuff_in_intestine + 1
+#     else # Our dragon is starving!
+#       if @asleep
+#         @asleep = false
+#         puts 'He wakes up suddenly!'
+#       end
+#       puts "#{@name} is starving In desperation, he ate YOU!"
+#       exit # This quits the program.
+#     end
+#     if @stuff_in_intestine >= 10
+#       @stuff_in_intestine = 0
+#       puts "Whoops! #{@name} had an accident..."
+#     end
 
-    if hungry?
-      if@asleep
-        @asleep = false
-        puts 'He wakes up suddenly!'
-      end
-      puts "#{@name}'s stomach grumbles..."
-    end
+#     if hungry?
+#       if@asleep
+#         @asleep = false
+#         puts 'He wakes up suddenly!'
+#       end
+#       puts "#{@name}'s stomach grumbles..."
+#     end
 
-    if poopy?
-      if @asleep
-        @asleep = false
-        puts 'He wakes up suddenly!'
-      end
-      puts "#{@name} does the potty dance..."
-    end
-  end
+#     if poopy?
+#       if @asleep
+#         @asleep = false
+#         puts 'He wakes up suddenly!'
+#       end
+#       puts "#{@name} does the potty dance..."
+#     end
+#   end
+# end
+
+# pet = Dragon.new 'Norbert'
+# pet.feed
+# pet.toss
+# pet.walk
+# pet.put_to_bed
+# pet.rock
+# pet.put_to_bed
+# pet.put_to_bed
+# pet.put_to_bed
+# pet.put_to_bed
+
+# Chapter 14
+# toast = Proc.new do
+#   puts 'Cheers!'
+# end
+
+# toast.call
+# toast.call
+# toast.call
+
+# do_you_like = Proc.new do |good_stuff|
+#   puts "I *really* like #{good_stuff}!"
+# end
+
+# do_you_like.call 'chocolate'
+# do_you_like.call 'Ruby'
+
+# Code #2
+# def do_self_importantly some_proc
+#   puts "Everybody just HOLD ON! I'm doing something..."
+#   some_proc.call
+#   puts "OK everyone, I'm done. As you were."
+# end
+
+# say_hello = Proc.new do
+#   puts 'hello'
+# end
+
+# say_goodbye = Proc.new do
+#   puts 'goodbye'
+# end
+
+# do_self_importantly say_hello
+# do_self_importantly say_goodbye
+
+# def maybe_do some_proc
+#   if rand(2) == 0
+#     some_proc.call
+#   end
+# end
+
+# def twice_do some_proc
+#   some_proc.call
+#   some_proc.call
+# end
+
+# wink = Proc.new do
+#   puts '<wink>'
+# end
+
+# glance = Proc.new do
+#   puts '<glance>'
+# end
+
+# maybe_do wink
+# maybe_do wink
+# maybe_do glance
+# maybe_do glance
+# twice_do wink
+# twice_do glance
+
+# def do_until_false first_input, some_proc
+#   input = first_input
+#   output = first_input
+
+#   while output
+#     input = output
+#     output = some_proc.call input
+#   end
+
+#   input
+# end
+
+
+# build_array_of_squares = Proc.new do |array|
+#   last_number = array.last
+#   if last_number <= 0
+#     false
+#   else
+#     # Take off the last number...
+#     array.pop
+#     # ...and replace it with its square...
+#     array.push last_number*last_number
+#     # ...followed by the next smaller number.
+#     array.push last_number-1
+#   end
+# end
+
+# always_false = Proc.new do |just_ignore_me|
+#   false
+# end
+
+# puts do_until_false([5], build_array_of_squares).inspect
+
+# yum = 'lemonade with a hint of orange blossom water'
+# puts do_until_false(yum, always_false)
+
+#
+# Pg 117 Methods That Return Procs
+
+# def compose proc1, proc2
+#   Proc.new do |x|
+#     proc2.call(proc1.call(x))
+#   end
+# end
+
+# square_it = Proc.new do |x|
+#   x * x
+# end
+
+# double_it = Proc.new do |x|
+#   x + x
+# end
+
+# double_then_square = compose double_it, square_it
+# square_then_double = compose square_it, double_it
+
+# puts double_then_square.call(5)
+# puts square_then_double.call(5)
+
+
+#
+# Pg 118
+# Passing Blocks (Not Procs) into Methods
+
+# class Array
+
+#   def each_even(&was_a_block__now_a_proc)
+#     # We start with "true" because
+#     # arrays start with 0, which is even.
+#     is_even = true
+
+#     self.each do |object|
+#       if is_even
+#         was_a_block__now_a_proc.call object
+#       end
+
+#       # Toggle from even to odd, or odd to even.
+#       is_even = !is_even
+#     end
+#   end
+# end
+
+# fruits = ['apple', 'bad apple', 'cherry', 'durian']
+
+# fruits.each_even do |fruit|
+#   puts "Yum! I just love #{fruit} pies, don't you?"
+# end
+
+# # Remember, we are getting the even-numbered *elements*
+# # of the array, which in this case are all odd numbers,
+# # because I live only to irritate you.
+# [1, 2, 3, 4, 5].each_even do |odd_ball|
+#   puts "#{odd_ball} is NOT an even number!"
+# end
+
+
+#
+# Pg 119
+
+# Profiling some code
+
+def profile block_description, &block
+  start_time = Time.new
+  block.call
+  duration = Time.new - start_time
+  puts "#{block_description}: #{duration} seconds"
 end
 
-pet = Dragon.new 'Norbert'
-pet.feed
-pet.toss
-pet.walk
-pet.put_to_bed
-pet.rock
-pet.put_to_bed
-pet.put_to_bed
-pet.put_to_bed
-pet.put_to_bed
+profile '25000 doublings' do
+  number = 1
 
+  25000.times do
+    number = number + number
+  end
 
+  puts "#{number.to_s.length} digits"
+  # That's the number of digits in this HUGE number
+end
 
-
-
-
-
-
-
-
-
-
-
+profile 'count to a million' do
+  number = 0
+  100000.times do
+    number = number + 1
+  end
+end
 
 
 

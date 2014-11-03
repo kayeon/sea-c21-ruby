@@ -20,12 +20,13 @@ class OrangeTree
   def initialize
     @fruit = 50
 
-    puts 'initialize method sets out 50 fruit'
+    puts "initialize method sets out #{@fruit} fruit"
   end
 
   def fruit
     @fruit
   end
+  # attr_reader :fruit (same as above def fruit)
 end
 
 orange_tree = OrangeTree.new

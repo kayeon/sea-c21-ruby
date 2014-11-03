@@ -22,6 +22,23 @@
 
 class Array
   def each_without_yolo(&block)
-    block # fix me
+    each do |element|
+      if element.downcase == 'yolo'
+        puts 'Life is too short'
+      else
+        block.call(element)
+      end
+    end
   end
 end
+
+%w(OMG YOLO ROTFL yolo FTW).each_without_yolo { |e| puts e }
+# above line where we have
+# { |e| puts e } <-- is the do end block
+# %w(OMG YOLO ROTFL yolo FTW) <-- is a way to define a single word string array
+
+# long winded way of writing above:
+
+# ['OMG', 'YOLO', 'ROTFL', 'yolo', 'FTW'].each_without_yolo do |e|
+# puts e
+# end
