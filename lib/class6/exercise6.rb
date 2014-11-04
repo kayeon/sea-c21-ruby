@@ -32,7 +32,7 @@ end
 def update(key, value)
   my_hash = load
   # my_hash[key.to_sym] = value
-  my_hash = my_hash.merge(key => value)
+  my_hash = my_hash.merge(key.to_sym => value)
   # my_hash = my_hash.merge(key.to_sym => value)
   # my_hash = my_hash.merge({key.to_sym => value}, )
   # person[key.to_sym] = value
