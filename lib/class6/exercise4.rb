@@ -43,8 +43,8 @@ end
 def display(pairs)
   pairs.each do |key, value|
     puts "#{key.inspect} => #{value.inspect}"
-    # pairs.each { |k, v| puts "#{k.inspect} => #{v.inspect}" }
   end
+  # pairs.each { |k, v| puts "#{k.inspect} => #{v.inspect}" }
 end
 
 person = load
