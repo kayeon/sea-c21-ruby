@@ -80,24 +80,25 @@ puts orange_tree_1.fruit
 puts orange_tree_2.fruit
 
 orange_tree = OrangeTree.new
-puts orange_tree.fruit     # => 50
+puts orange_tree.fruit        # => 50
 
 tree_2 = orange_tree.pick     # => OrangeTree.new(49)
-puts orange_tree.fruit     # => 50
+puts orange_tree.fruit        # => 50
 puts tree_2.fruit
 puts
 
-tree_3 = orange_tree.pick(49)  # => OrangeTree.new(1)
-puts orange_tree.fruit     # => 50
+tree_3 = orange_tree.pick(49) # => OrangeTree.new(1)
+puts orange_tree.fruit        # => 50
 puts tree_3.fruit
 puts
 
-tree_4 = orange_tree.pick(50)  # => OrangeTree.new(0)
-puts orange_tree.fruit     # => 50
+tree_4 = orange_tree.pick(50) # => OrangeTree.new(0)
+puts orange_tree.fruit        # => 50
 puts tree_4.fruit
 puts
 
-tree_5 = orange_tree.pick(51)  # => nil
-puts orange_tree.fruit     # => 50
-puts tree_5.fruit # b/c tree_5 = nil ... it'll blow up
-puts
+tree_5 = orange_tree.pick(51) # => nil
+puts orange_tree.fruit        # => 50
+if tree_5 != nil
+  puts tree_5.fruit             # b/c tree_5 = nil ... it'll blow up
+end

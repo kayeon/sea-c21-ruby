@@ -93,8 +93,7 @@ class Integer
       num %= arabic
     end
   end
-
-  answer.join
+  # answer.join
 end
 
 class Array

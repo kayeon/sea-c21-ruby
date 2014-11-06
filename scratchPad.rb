@@ -1,7 +1,7 @@
 class Ball
 
-  def initialize(ball = regular)
-  @ball_type
+  def initialize(ball = 0)
+    @ball_type
   end
 
   attr_reader :ball_type
