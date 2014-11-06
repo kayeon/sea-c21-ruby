@@ -100,5 +100,5 @@ puts
 tree_5 = orange_tree.pick(51) # => nil
 puts orange_tree.fruit        # => 50
 if tree_5 != nil
-  puts tree_5.fruit             # b/c tree_5 = nil ... it'll blow up
+  puts tree_5.fruit           # b/c tree_5 = nil ... it'll blow up
 end
